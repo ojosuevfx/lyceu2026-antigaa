@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const principles = [
   "A filosofia não se aprende por exposição passiva, mas pela prática ativa do argumento",

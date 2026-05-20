@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const isFor = [
   { text: "Você é católico e quer entender sua fé com profundidade filosófica" },
