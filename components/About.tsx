@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="lyceum" style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "0 0 120px", width: "100%" }}>
+    <section id="lyceum" style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "80px 0 120px", width: "100%" }}>
       <motion.div
         className="about-card"
         initial={{ opacity: 0, y: 48 }}
@@ -33,10 +33,10 @@ export default function About() {
           style={{ flexShrink: 0, width: "48%", aspectRatio: "4/5", borderRadius: "16px", overflow: "hidden", zIndex: 1, position: "relative" }}
         >
           <Image
-            src="/tomas-de-aquino.png"
-            alt="Santo Tomás de Aquino"
+            src="/aristoteles-aura.webp"
+            alt="Aristóteles"
             fill
-            style={{ objectFit: "cover", objectPosition: "top center" }}
+            style={{ objectFit: "cover", objectPosition: "80% 30%", transform: "scale(1.25)", transformOrigin: "80% 30%" }}
           />
         </motion.div>
 
@@ -49,24 +49,21 @@ export default function About() {
           viewport={{ once: true, margin: "-8%" }}
           style={{ display: "flex", flexDirection: "column", gap: "28px", width: "44%", zIndex: 1 }}
         >
-          <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--color-accent)" }}>O Lyceum</span>
+          <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--color-accent)" }}>A Especialização</span>
 
           <h3 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "32px", lineHeight: "118%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0 }}>
-            Uma escola de filosofia fundamentada na{" "}
-            <span style={{ color: "var(--color-accent)" }}>tradição perene do Ocidente.</span>
+            Um programa de quatro anos para dominar Aristóteles,{" "}
+            <span style={{ color: "var(--color-accent)" }}>com método e sem solidão.</span>
           </h3>
 
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", margin: 0 }}>
-            O Lyceum é uma comunidade de formação intelectual inspirada no modelo pedagógico do Thomas Aquinas College (EUA) — uma das instituições mais rigorosas do mundo no ensino clássico.
-          </p>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", margin: 0 }}>
-            Seu currículo percorre, em quatro anos, os grandes textos da tradição filosófica ocidental — de Platão a Santo Tomás de Aquino — por meio do método socrático de discussão, em turmas deliberadamente pequenas.
+            A Especialização em Aristóteles é um programa de 4 anos para quem quer estudar filosofia tradicional com a profundidade e a estrutura que ela exige — sem precisar de faculdade, sem misturar com modas acadêmicas modernas, e sem estudar sozinho. O currículo segue a ordem clássica do Thomas Aquinas College: Lógica no primeiro ano, Filosofia da Natureza e Psicologia no segundo, Ética e Política no terceiro, Metafísica no quarto.
           </p>
 
           <Link href="#ingresso" className="btn-cta"
             style={{ display: "inline-flex", alignItems: "center", gap: "10px", padding: "13px 28px", borderRadius: "200px", textDecoration: "none", background: "linear-gradient(90deg, #c8a96e 0%, #e2c98a 100%)", cursor: "pointer", width: "fit-content" }}
           >
-            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "14px", color: "var(--color-text-on-accent)" }}>Candidatar-se</span>
+            <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "14px", color: "var(--color-text-on-accent)" }}>Me inscrever</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="var(--color-text-on-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

@@ -11,31 +11,33 @@ function IconBook() {
     </svg>
   );
 }
-function IconSocratic() {
+function IconLive() {
   return (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
       <rect width="48" height="48" rx="12" fill="rgba(200,169,110,0.07)" />
-      <path d="M18 20c0-1.105.895-2 2-2h12a2 2 0 012 2v7a2 2 0 01-2 2H22l-4 3v-3z" stroke="#c8a96e" strokeWidth="1.5" strokeLinejoin="round" />
-      <circle cx="24" cy="23.5" r="1" fill="#c8a96e" /><circle cx="28" cy="23.5" r="1" fill="#c8a96e" /><circle cx="20" cy="23.5" r="1" fill="#c8a96e" />
+      <rect x="13" y="17" width="22" height="14" rx="2" stroke="#c8a96e" strokeWidth="1.5" />
+      <path d="M20 24l5 3-5 3v-6z" fill="#c8a96e" opacity="0.7" />
+      <path d="M17 35l3-4M31 35l-3-4" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
     </svg>
   );
 }
-function IconCommunity() {
+function IconAI() {
   return (
     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
       <rect width="48" height="48" rx="12" fill="rgba(200,169,110,0.07)" />
-      <circle cx="24" cy="20" r="5" stroke="#c8a96e" strokeWidth="1.5" />
-      <path d="M15 35c0-4.971 4.029-9 9-9s9 4.029 9 9" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="15" cy="20" r="3.5" stroke="#c8a96e" strokeWidth="1.3" />
-      <circle cx="33" cy="20" r="3.5" stroke="#c8a96e" strokeWidth="1.3" />
+      <rect x="14" y="16" width="20" height="14" rx="3" stroke="#c8a96e" strokeWidth="1.5" />
+      <circle cx="20" cy="23" r="1.5" fill="#c8a96e" opacity="0.7" />
+      <circle cx="28" cy="23" r="1.5" fill="#c8a96e" opacity="0.7" />
+      <path d="M20 33v-3M28 33v-3M24 33v-3" stroke="#c8a96e" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M20 16v-2M28 16v-2" stroke="#c8a96e" strokeWidth="1.3" strokeLinecap="round" opacity="0.5" />
     </svg>
   );
 }
 
 const pillars = [
-  { Icon: IconBook, num: "01", title: "Currículo Clássico", description: "Você percorre uma sequência cuidadosamente organizada de autores e obras, de Platão a Tomás de Aquino. Cada texto é escolhido para preparar o terreno para o próximo. Nada é aleatório." },
-  { Icon: IconSocratic, num: "02", title: "Método Socrático", description: "Nas aulas ao vivo, você não ouve palestras. Você pensa. O método socrático exige participação ativa: análise textual, questionamento, defesa de posições. É o mesmo método dos grandes colégios clássicos americanos." },
-  { Icon: IconCommunity, num: "03", title: "Comunidade Intelectual", description: "Você estuda ao lado de alunos sérios, com os mesmos objetivos. A amizade intelectual que só nasce entre quem busca a verdade juntos é parte essencial da formação. Não é um grupo de WhatsApp. É uma escola." },
+  { Icon: IconBook, num: "01", title: "Currículo do TAC", description: "Quatro anos organizados na sequência clássica do Thomas Aquinas College: Lógica, Filosofia da Natureza, Ética e Metafísica. Cada obra prepara o terreno para a próxima. Nada é aleatório." },
+  { Icon: IconLive, num: "02", title: "Aulas semanais ao vivo", description: "Uma aula por semana, conduzida por Lucca de Tomás. Você assiste ao vivo ou pela gravação, no seu ritmo. Todo o acervo fica disponível para sempre." },
+  { Icon: IconAI, num: "03", title: "Tutor Aquino 24h", description: "Entre uma aula e outra, o Tutor Aquino — assistente de IA treinado nos comentários de Santo Tomás — está disponível para tirar suas dúvidas a qualquer hora do dia." },
 ];
 
 export default function Solutions() {
@@ -57,7 +59,7 @@ export default function Solutions() {
           <span style={{ color: "#c8a96e" }}>filosófica séria.</span>
         </h2>
         <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
-          A filosofia se aprende pela leitura dos grandes textos, pela discussão rigorosa e pela convivência intelectual. O Lyceum estrutura esses três elementos com método.
+          A filosofia se aprende com método, na ordem certa, e sem solidão. A Especialização estrutura esses três elementos.
         </p>
       </motion.div>
 

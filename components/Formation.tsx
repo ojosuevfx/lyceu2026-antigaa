@@ -5,27 +5,27 @@ import { motion } from "framer-motion";
 const years = [
   {
     year: "Ano I",
-    title: "Filosofia da Razão",
-    desc: "Introdução à lógica e à arte do argumento. Leitura dos textos fundadores da tradição filosófica ocidental.",
-    topics: ["Lógica aristotélica", "Introdução à filosofia", "Método socrático", "Grandes textos fundadores"],
+    title: "Lógica",
+    desc: "O instrumento do pensamento. Sem ele, nenhuma outra área da filosofia se sustenta.",
+    topics: ["Categorias — Aristóteles", "Da Interpretação — Aristóteles", "Analíticos Anteriores e Posteriores", "Tópicos e Refutações Sofísticas"],
   },
   {
     year: "Ano II",
-    title: "Filosofia da Natureza",
-    desc: "O estudo da natureza e da alma segundo os grandes filósofos: o mundo material, o movimento, a vida e o ser humano.",
-    topics: ["Filosofia da natureza", "Psicologia filosófica", "Aristóteles", "A alma e o corpo"],
+    title: "Filosofia da Natureza e Psicologia",
+    desc: "Os princípios do mundo natural e da alma humana.",
+    topics: ["Física — Aristóteles", "De Generatione", "De Anima — Aristóteles"],
   },
   {
     year: "Ano III",
-    title: "Ética e Filosofia Política",
-    desc: "A questão do bem, da virtude e da vida em sociedade. O que é uma vida bem vivida e como os homens devem se organizar.",
-    topics: ["Ética das virtudes", "Filosofia política", "O bem comum", "Platão e Aristóteles"],
+    title: "Ética e Política",
+    desc: "A vida moral e cívica. O que é uma vida bem vivida e como os homens devem se organizar.",
+    topics: ["Ética a Nicômaco — Aristóteles", "Política — Aristóteles"],
   },
   {
     year: "Ano IV",
     title: "Metafísica",
-    desc: "O estudo do ser enquanto ser, a existência de Deus e os fundamentos últimos da realidade segundo a tradição perene.",
-    topics: ["Ontologia", "Teologia natural", "Santo Tomás de Aquino", "Ser e essência"],
+    desc: "O coroamento. O ser enquanto ser, as primeiras causas, a teologia natural.",
+    topics: ["Metafísica — Aristóteles"],
   },
 ];
 
@@ -50,10 +50,10 @@ export default function Formation() {
           </span>
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "48px" }} className="formation-heading-row">
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "36px", lineHeight: "116%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0, maxWidth: "440px" }}>
-              Formação de quatro anos em Filosofia Clássica.
+              Formação de quatro anos em Aristóteles.
             </h2>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "360px", margin: 0, flexShrink: 0 }} className="formation-subtext">
-              Cada ano aprofunda o anterior, seguindo a progressão natural da tradição filosófica — da lógica à metafísica.
+              Cada ano aprofunda o anterior, seguindo a ordem clássica do Thomas Aquinas College — da Lógica à Metafísica.
             </p>
           </div>
         </motion.div>

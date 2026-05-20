@@ -43,12 +43,23 @@ export default function Hero() {
         alignItems: "center",
         overflow: "hidden",
         borderBottom: "1px solid var(--color-border-subtle)",
-        paddingTop: "80px",
+        paddingTop: "0",
       }}
     >
       {/* ── Background ── */}
       <motion.div style={{ position: "absolute", inset: 0, zIndex: 0, y }}>
-        {hasImages ? (
+        {/* Imagem de fundo — Aristóteles */}
+        <Image
+          src="/aristoteles-img.webp"
+          alt=""
+          fill
+          priority
+          className="aristoteles-bg"
+          style={{ objectFit: "cover", objectPosition: "35% 5%", opacity: 0.6, transform: "scale(1.4)", transformOrigin: "35% 5%" }}
+        />
+        {/* Overlay escuro para manter legibilidade do texto */}
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(160deg, rgba(12,10,6,0.85) 0%, rgba(12,10,6,0.6) 50%, rgba(13,15,16,0.75) 100%)" }} />
+        {hasImages && (
           <>
             <AnimatePresence initial={false}>
               <motion.div
@@ -70,11 +81,6 @@ export default function Hero() {
             </AnimatePresence>
             <div style={{ position: "absolute", inset: 0, background: "rgba(9,9,11,0.65)" }} />
           </>
-        ) : (
-          <div style={{
-            position: "absolute", inset: 0,
-            background: "linear-gradient(160deg, #16140F 0%, #0C0A06 50%, #0D0F10 100%)",
-          }} />
         )}
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 60% 60% at 0% 50%, rgba(200,169,110,0.07) 0%, transparent 65%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "260px", background: "linear-gradient(to bottom, transparent, #09090B)", pointerEvents: "none" }} />
@@ -121,16 +127,16 @@ export default function Hero() {
             style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--color-accent)", flexShrink: 0, display: "block" }}
           />
           <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "12px", color: "var(--color-accent)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-            1ª Escola de Filosofia Clássica do Brasil
+            Turma Fundadora · Abertura 2026
           </span>
         </motion.div>
 
         {/* H1 */}
         <h1 className="hero-h1" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, lineHeight: "106%", letterSpacing: "-0.035em", fontSize: "80px", margin: 0 }}>
           {[
-            { text: "Escola de filosofia", gold: false },
-            { text: "clássica pelo Método", gold: false },
-            { text: "Socrático.", gold: true },
+            { text: "Quatro anos para dominar", gold: false },
+            { text: "a filosofia tradicional,", gold: false },
+            { text: "pela porta certa.", gold: true },
           ].map((line, i) => (
             <motion.span
               key={i}
@@ -150,9 +156,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "17px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "520px", margin: 0 }}
+          style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "17px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "560px", margin: 0 }}
         >
-          Inspirado no modelo pedagógico do Thomas Aquinas College (EUA), o Lyceum é uma comunidade de formação intelectual fundada sobre os pilares da Tradição Católica, do método socrático e da leitura dos grandes clássicos.
+          A Especialização em Aristóteles importa para o Brasil o currículo do Thomas Aquinas College — Lógica, Filosofia da Natureza, Ética, Política e Metafísica — com aulas semanais conduzidas por Lucca de Tomás. Sem misturas modernas. Sem solidão. Com método.
         </motion.p>
 
         {/* CTAs */}
@@ -174,7 +180,7 @@ export default function Hero() {
             }}
           >
             <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "15px", color: "var(--color-text-on-accent)" }}>
-              Candidatar-se ao Lyceum
+              Me inscrever
             </span>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="var(--color-text-on-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -193,7 +199,7 @@ export default function Hero() {
             onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.borderColor = "var(--color-border-medium)")}
           >
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "15px", color: "var(--color-text-primary)" }}>
-              Conhecer o método
+              Conhecer o programa
             </span>
           </Link>
         </motion.div>
@@ -209,6 +215,7 @@ export default function Hero() {
           .hero-cta-row { flex-direction: column !important; width: 100% !important; }
           .hero-cta-row a { width: 100% !important; justify-content: center !important; }
           .hero-inner { padding: 60px 24px 100px !important; }
+          .aristoteles-bg { object-position: 45% 28% !important; transform: scale(1.15) !important; transform-origin: 45% 28% !important; filter: blur(2px) !important; }
         }
       `}</style>
     </section>

@@ -26,7 +26,7 @@ export default function Founder() {
           {/* Frame */}
           <div style={{ borderRadius: "24px", overflow: "hidden", aspectRatio: "4/5", position: "relative", boxShadow: "0 32px 80px rgba(0,0,0,0.12), 0 8px 24px rgba(0,0,0,0.08)" }}>
             <Image
-              src="/lucca.jpg"
+              src="/lucca.webp"
               alt="Lucca de Tomás, fundador do Lyceum"
               fill
               style={{ objectFit: "cover", objectPosition: "top center" }}
@@ -60,7 +60,7 @@ export default function Founder() {
         >
           <div>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#c8a96e", display: "block", marginBottom: "16px" }}>
-              Corpo Docente
+              Quem será seu mentor
             </span>
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "34px", lineHeight: "116%", letterSpacing: "-0.025em", color: "#F4F5F6", margin: 0 }}>
               Você não vai estudar sozinho, mas com alguém que já{" "}
@@ -68,15 +68,11 @@ export default function Founder() {
             </h2>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
-              Lucca de Tomás estudou Artes Liberais e Educação Clássica no{" "}
-              <strong style={{ color: "#F4F5F6", fontWeight: 600 }}>Thomas Aquinas College (EUA)</strong>, uma das instituições mais rigorosas do mundo no ensino clássico pelo método socrático.
-            </p>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
-              Discípulo da filosofia e teologia de Santo Tomás de Aquino, tem como missão pessoal contribuir para o renascimento cultural brasileiro através da formação intelectual séria.
-            </p>
-          </div>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: 0 }}>
+            Lucca de Tomás estudou por dois anos e meio no{" "}
+            <strong style={{ color: "#F4F5F6", fontWeight: 600 }}>Thomas Aquinas College (EUA)</strong>{" "}
+            — a faculdade católica de great books mais conceituada do mundo. De volta ao Brasil, fundou o Lyceum, programa de estudos socráticos online que hoje conta com mais de 300 alunos ativos.
+          </p>
 
           {/* Quote */}
           <div style={{
@@ -87,7 +83,7 @@ export default function Founder() {
             borderLeft: "3px solid rgba(200,169,110,0.6)",
           }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "#8A9AA4", margin: "0 0 10px", fontStyle: "italic" }}>
-              "Acredito que não haverá renascimento cultural católico sem uma vida intelectual séria. O Lyceum é minha resposta a esse desafio."
+              "O currículo é o do Thomas Aquinas College. O professor é ex-aluno do TAC. A tradição chega ao Brasil pela porta certa."
             </p>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "12px", color: "#c8a96e", letterSpacing: "0.04em", textTransform: "uppercase" }}>
               Lucca de Tomás

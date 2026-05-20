@@ -5,22 +5,27 @@ import { motion } from "framer-motion";
 const items = [
   {
     n: "01",
-    title: "Encontros ao vivo",
-    desc: "Semanais, pelo método socrático. Sem palestra — o professor conduz a discussão a partir do texto lido pela turma.",
+    title: "Aulas semanais ao vivo",
+    desc: "Conduzidas por Lucca de Tomás, com 90 minutos de duração. Você assiste ao vivo ou depois pela gravação.",
   },
   {
     n: "02",
-    title: "Gravações disponíveis",
-    desc: "Todos os encontros ficam gravados para revisão. O acervo acompanha o aluno durante toda a formação.",
+    title: "Gravações vitalícias",
+    desc: "Todo o conteúdo gravado fica disponível para sempre na plataforma. Sem prazo de validade.",
   },
   {
     n: "03",
-    title: "Textos preparados pelo professor",
-    desc: "Selecionados e traduzidos pelo próprio professor para garantir precisão filosófica e fidelidade ao original.",
+    title: "Tira-dúvidas mensal com Lucca",
+    desc: "Uma vez por mês, encontro exclusivo ao vivo para aprofundar o que foi estudado.",
   },
   {
     n: "04",
-    title: "Comunidade de alunos",
+    title: "Tutor Aquino 24h",
+    desc: "Assistente de IA treinado nos comentários de Santo Tomás às obras de Aristóteles. Disponível a qualquer hora para tirar suas dúvidas entre as aulas.",
+  },
+  {
+    n: "05",
+    title: "Comunidade fechada",
     desc: "Um ambiente de pessoas comprometidas com o mesmo percurso intelectual, para além das aulas.",
   },
 ];
@@ -43,14 +48,14 @@ export default function HowItWorks() {
         >
           <div>
             <span style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--color-accent)", display: "block", marginBottom: "16px" }}>
-              Estrutura do Programa
+              O Programa
             </span>
             <h2 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800, fontSize: "36px", lineHeight: "116%", letterSpacing: "-0.025em", color: "var(--color-text-primary)", margin: 0, maxWidth: "420px" }}>
-              Como o Lyceum funciona na prática.
+              Como a Especialização funciona na prática.
             </h2>
           </div>
           <p style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400, fontSize: "15px", lineHeight: "170%", color: "var(--color-text-muted)", maxWidth: "380px", margin: 0, flexShrink: 0 }} className="how-subtext">
-            Cada elemento da estrutura existe para garantir que a aprendizagem filosófica aconteça com rigor e continuidade.
+            Cada elemento existe para garantir que o estudo aconteça com rigor e continuidade — ao seu ritmo.
           </p>
         </motion.div>
 

@@ -4,13 +4,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
-  { q: "Preciso ter estudado filosofia antes?", a: "Não. O Lyceum foi estruturado para receber tanto quem nunca leu filosofia quanto quem já tem algum contato com a área. O método e o currículo te conduzem do ponto certo. O que você precisa é de disposição para ler e pensar com seriedade." },
-  { q: "Como funcionam os encontros ao vivo?", a: "Os encontros são semanais, online, com duração média de 90 minutos. Seguem o formato socrático: não há palestra expositiva. O professor conduz a discussão a partir dos textos que a turma leu durante a semana. Sua participação é esperada e essencial." },
-  { q: "E se eu não puder participar de algum encontro?", a: "Os encontros são gravados e disponibilizados para os alunos da turma. Porém, o aproveitamento real do método socrático acontece na discussão ao vivo. Encorajamos presença consistente: é parte do compromisso que você assume ao ingressar." },
-  { q: "Por que existe um processo seletivo?", a: "Porque a qualidade do ambiente de aprendizado depende de quem está dentro dele. O processo seletivo não é para excluir. É para garantir que cada aluno esteja genuinamente comprometido com a proposta. Uma comunidade séria começa com membros sérios." },
-  { q: "Qual é a duração total do Lyceum?", a: "O curso completo tem 4 anos de formação, organizados em blocos temáticos progressivos. Você pode ingressar no início de cada turma, que começa pelo Ano 1. Não é possível entrar em anos intermediários sem ter cursado a base anterior." },
-  { q: "Qual é o valor do investimento?", a: "O investimento mensal é apresentado durante o processo de matrícula. Trabalhamos com um número controlado de alunos por turma, o que garante a qualidade das discussões. As vagas são liberadas apenas no momento de abertura de cada turma." },
-  { q: "O Lyceum tem alguma filiação religiosa?", a: "O Lyceum é fundado sobre os pilares da Tradição Católica. Nosso currículo inclui autores e obras da filosofia perene, com Santo Tomás de Aquino como referência central. Alunos de outras formações são bem-vindos, desde que respeitem essa perspectiva." },
+  { q: "Preciso ter estudado filosofia antes?", a: "Não. O programa começa pela Lógica, do zero. Não há pré-requisito de leitura ou formação prévia." },
+  { q: "Como funcionam as aulas?", a: "São semanais, ao vivo, com 90 minutos de duração. Você assiste ao vivo ou depois pela gravação — todo o conteúdo fica disponível para sempre na plataforma." },
+  { q: "Qual a diferença entre a Especialização e o Lyceum?", a: "O Lyceum é turma fechada com discussão socrática semanal em pequeno grupo. A Especialização é o mesmo currículo, sem discussão socrática, com mais flexibilidade e ao seu próprio ritmo." },
+  { q: "E se eu não conseguir acompanhar?", a: "Acesso vitalício à gravação. Você volta quando quiser, sem prazo de validade. E tem o Tutor Aquino disponível 24h para tirar dúvidas entre as aulas." },
+  { q: "Quanto tempo por semana eu preciso?", a: "Entre 4 e 6 horas: 1h30 de aula mais 2 a 4 horas de leitura individual." },
+  { q: "Vou precisar comprar livros?", a: "Sim. As edições recomendadas são indicadas aula a aula. O investimento médio é de R$ 50 a R$ 100 por trimestre." },
+  { q: "Tem garantia?", a: "Sim. 7 dias incondicional após o início das aulas. Se não for para você, devolução integral." },
+  { q: "O programa é presencial?", a: "Não. É 100% online." },
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
@@ -85,7 +86,7 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", padding: "0 0 120px" }}
+      style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", padding: "120px 0" }}
     >
       {/* Heading — centered */}
       <motion.div
